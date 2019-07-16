@@ -1,0 +1,36 @@
+En parte basandome en http://www.baeldung.com/rest-api-spring-oauth2-angularjs y mas de 30 paginas mas.
+
+Para autenticado:
+
+URL: http://localhost:8080/oauth/token by post
+
+Headers:
+
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic c2VkX2NsaWVudDpzZWNyZXQ=  --> Donde el codigo raro corresponde a window.btoa("sed_client:secret"); en javascript.
+
+Data form:
+
+username: jdsancheze
+password: 123456
+grant_type: password
+client_id: sed_client
+
+Si todo sale bien respondera algo como:
+
+
+{
+  "access_token": "4311c03d-06be-4eea-a3e5-fe5af7a24d21"
+  "token_type": "bearer"
+  "refresh_token": "ebbd3b5c-0c22-45c6-b30f-61e9fe2a9aa4"
+  "expires_in": 43199
+  "scope": "read write"
+}
+
+
+Para una solicitud normal seria:
+
+URL: http://localhost:8080/ by GET
+
+Content-Type: application/x-www-form-urlencoded
+Authorization: Bearer 4311c03d-06be-4eea-a3e5-fe5af7a24d21   --> Fijarse que aqui va el token

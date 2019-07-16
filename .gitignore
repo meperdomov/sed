@@ -1,0 +1,8 @@
+.metadata/
+sed/log/
+.recommenders/
+RemoteSystemsTempFiles/
+sed.iml
+sed/.idea
+sed/target
+sed/.settings
