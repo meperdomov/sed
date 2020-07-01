@@ -11,7 +11,7 @@
 	<properties>
 		<hibernate.version>5.1.0.Final</hibernate.version>
 		<jdk.version>1.8</jdk.version>
-		<mysql.version>5.1.6</mysql.version>
+		<mysql.version>8.0.16</mysql.version>
 		<oauth.version>2.0.11.RELEASE</oauth.version>
 		<start-class>co.com.simac.sed.Aplicacion</start-class>
 	</properties>
