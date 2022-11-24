@@ -9,7 +9,7 @@
 	<name>Sed</name>
 
 	<properties>
-		<hibernate.version>5.1.0.Final</hibernate.version>
+		<hibernate.version>5.3.20.Final</hibernate.version>
 		<jdk.version>1.8</jdk.version>
 		<mysql.version>5.1.6</mysql.version>
 		<oauth.version>2.0.11.RELEASE</oauth.version>
